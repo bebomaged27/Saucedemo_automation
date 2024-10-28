@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Checkout Tests"
+           tests="22"
+           failures="3"
+           errors="0"
+           skipped="0"
+           time="10.968">
+    <properties></properties>
+
+            <testcase
+                name="testSortingOptionsPersistAfterNavigation"
+                time="0.335"
+                classname="org.example.Tests.ProductsPageTests">
+
+            <failure type="java.lang.AssertionError" message="Sorting option did not persist after navigation. expected [true] but found [false]">
+                <![CDATA[java.lang.AssertionError: Sorting option did not persist after navigation. expected [true] but found [false]
+                org.testng.Assert.fail(Assert.java:111)org.testng.Assert.failNotEquals(Assert.java:1578)org.testng.Assert.assertTrue(Assert.java:57)org.example.Tests.ProductsPageTests.testSortingOptionsPersistAfterNavigation(ProductsPageTests.java:214)java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)java.base/java.lang.reflect.Method.invoke(Method.java:580)org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)java.base/java.util.ArrayList.forEach(ArrayList.java:1597)org.testng.TestRunner.privateRun(TestRunner.java:739)org.testng.TestRunner.run(TestRunner.java:614)org.testng.SuiteRunner.runTest(SuiteRunner.java:421)org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)org.testng.SuiteRunner.run(SuiteRunner.java:312)org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)org.testng.TestNG.runSuitesLocally(TestNG.java:1208)org.testng.TestNG.runSuites(TestNG.java:1112)org.testng.TestNG.run(TestNG.java:1079)com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+]]>
+            </failure>
+    </testcase>
+            <testcase
+                name="testViewProductDetails"
+                time="0.091"
+                classname="org.example.Tests.ProductsPageTests">
+
+            <failure type="java.lang.AssertionError" message="Product details are not displayed. expected [true] but found [false]">
+                <![CDATA[java.lang.AssertionError: Product details are not displayed. expected [true] but found [false]
+                org.testng.Assert.fail(Assert.java:111)org.testng.Assert.failNotEquals(Assert.java:1578)org.testng.Assert.assertTrue(Assert.java:57)org.example.Tests.ProductsPageTests.testViewProductDetails(ProductsPageTests.java:108)java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)java.base/java.lang.reflect.Method.invoke(Method.java:580)org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)java.base/java.util.ArrayList.forEach(ArrayList.java:1597)org.testng.TestRunner.privateRun(TestRunner.java:739)org.testng.TestRunner.run(TestRunner.java:614)org.testng.SuiteRunner.runTest(SuiteRunner.java:421)org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)org.testng.SuiteRunner.run(SuiteRunner.java:312)org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)org.testng.TestNG.runSuitesLocally(TestNG.java:1208)org.testng.TestNG.runSuites(TestNG.java:1112)org.testng.TestNG.run(TestNG.java:1079)com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+]]>
+            </failure>
+    </testcase>
+            <testcase
+                name="testPriceCalculationForMultipleQuantities"
+                time="0.080"
+                classname="org.example.Tests.ProductsPageTests">
+
+            <failure type="java.lang.IndexOutOfBoundsException" message="Index 0 out of bounds for length 0">
+                <![CDATA[java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
+                java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:100)java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:106)java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:302)java.base/java.util.Objects.checkIndex(Objects.java:365)java.base/java.util.ArrayList.get(ArrayList.java:428)org.example.Pages.ProductsPage.updateProductQuantity(ProductsPage.java:164)org.example.Tests.ProductsPageTests.testPriceCalculationForMultipleQuantities(ProductsPageTests.java:204)java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)java.base/java.lang.reflect.Method.invoke(Method.java:580)org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)java.base/java.util.ArrayList.forEach(ArrayList.java:1597)org.testng.TestRunner.privateRun(TestRunner.java:739)org.testng.TestRunner.run(TestRunner.java:614)org.testng.SuiteRunner.runTest(SuiteRunner.java:421)org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)org.testng.SuiteRunner.run(SuiteRunner.java:312)org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)org.testng.TestNG.runSuitesLocally(TestNG.java:1208)org.testng.TestNG.runSuites(TestNG.java:1112)org.testng.TestNG.run(TestNG.java:1079)com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+]]>
+            </failure>
+    </testcase>
+
+
+            <testcase
+                name="testAddingAndRemovingProductsOnDetailsPage"
+                time="0.276"
+                classname="org.example.Tests.ProductsPageTests">
+            </testcase>
+            <testcase
+                name="testRemoveFromCart"
+                time="4.172"
+                classname="org.example.Tests.ProductsPageTests">
+            </testcase>
+            <testcase
+                name="testProductsPageResponsiveness"
+                time="0.001"
+                classname="org.example.Tests.ProductsPageTests">
+            </testcase>
+            <testcase
+                name="testBackButtonNavigationFromProductDetails"
+                time="0.154"
+                classname="org.example.Tests.ProductsPageTests">
+            </testcase>
+            <testcase
+                name="testCartIconUpdatesAfterRemovingItems"
+                time="0.183"
+                classname="org.example.Tests.ProductsPageTests">
+            </testcase>
+            <testcase
+                name="testSortingByNameAToZ"
+                time="0.161"
+                classname="org.example.Tests.ProductsPageTests">
+            </testcase>
+            <testcase
+                name="testTotalCartQuantity"
+                time="0.164"
+                classname="org.example.Tests.ProductsPageTests">
+            </testcase>
+            <testcase
+                name="testCartIconNavigatesToCartPage"
+                time="0.077"
+                classname="org.example.Tests.ProductsPageTests">
+            </testcase>
+            <testcase
+                name="testSortingByNameZToA"
+                time="0.202"
+                classname="org.example.Tests.ProductsPageTests">
+            </testcase>
+            <testcase
+                name="testSortingByPriceLowToHigh"
+                time="0.180"
+                classname="org.example.Tests.ProductsPageTests">
+            </testcase>
+            <testcase
+                name="testAddToCartSingleProduct"
+                time="0.099"
+                classname="org.example.Tests.ProductsPageTests">
+            </testcase>
+            <testcase
+                name="testProductImagesAreClickable"
+                time="2.120"
+                classname="org.example.Tests.ProductsPageTests">
+            </testcase>
+            <testcase
+                name="testInventoryPriceAccuracy"
+                time="0.002"
+                classname="org.example.Tests.ProductsPageTests">
+            </testcase>
+            <testcase
+                name="testNavigationToCheckoutPage"
+                time="0.141"
+                classname="org.example.Tests.ProductsPageTests">
+            </testcase>
+            <testcase
+                name="testAddToCartMultipleProducts"
+                time="0.152"
+                classname="org.example.Tests.ProductsPageTests">
+            </testcase>
+            <testcase
+                name="testProductDescriptionAccuracy"
+                time="0.001"
+                classname="org.example.Tests.ProductsPageTests">
+            </testcase>
+            <testcase
+                name="testProductsAreDisplayed"
+                time="0.016"
+                classname="org.example.Tests.ProductsPageTests">
+            </testcase>
+            <testcase
+                name="testContinueShoppingButtonOnCartPage"
+                time="2.163"
+                classname="org.example.Tests.ProductsPageTests">
+            </testcase>
+            <testcase
+                name="testSortingByPriceHighToLow"
+                time="0.198"
+                classname="org.example.Tests.ProductsPageTests">
+            </testcase>
+</testsuite>
